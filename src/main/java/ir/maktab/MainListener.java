@@ -9,5 +9,6 @@ public class MainListener implements ServletContextListener {
     @Override
     public void contextInitialized(ServletContextEvent sce) {
         HibernateUtil.getMainEntityManagerFactory().createEntityManager();
+
     }
 }

@@ -18,7 +18,7 @@ public class Airline extends BaseUser {
     @Column(name = AIRLINE_NAME)
     private String airlineName;
 
-    @OneToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    @OneToMany(cascade = {CascadeType.ALL})
     @JoinColumn(name = "airline_id")
     private List<AirlineFlight> flights = new ArrayList<>();
 
