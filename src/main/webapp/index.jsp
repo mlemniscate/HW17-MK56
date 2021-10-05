@@ -8,27 +8,32 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<div class="container">
-    <div class="big-image"></div>
-    <div class="login">
-        <p>User Login</p>
-        <form method="post" action="/MK56HW17_war/user">
-            <label for="user-username">Username</label>
-            <input id="user-username" name="user-username" type="text" /><br />
-            <label for="user-password">Password</label>
-            <input id="user-password" name="user-password" type="text" /><br />
-            <button class="button" type="submit">Login</button>
-        </form>
-    </div>
-    <div class="login">
-        <p>Airline Login</p>
-        <form method="post" action="/MK56HW17_war/airline">
-            <label for="airline-username">Username</label>
-            <input id="airline-username" name="airline-username" type="text" /><br />
-            <label for="airline-password">Password</label>
-            <input id="airline-password" name="airline-password" type="text" /><br />
-            <button class="button" type="submit">Login</button>
-        </form>
+<div class="big-image">
+    <div class="container">
+        <div class="login">
+            <p>User Login</p>
+            <form method="GET" action="/MK56HW17_war/user">
+                <label for="user-username">Username</label>
+                <input id="user-username" type="text" name="user-username" /><br />
+                <label for="user-password">Password</label>
+                <input id="user-password" type="text" /><br />
+                <button class="button" type="submit">Login</button>
+            </form>
+        </div>
+        <div class="login">
+            <p>Airline Login</p>
+            <form method="GET" action="/MK56HW17_war/airline">
+                <label for="airline-username">Username</label>
+                <input
+                        id="airline-username"
+                        type="text"
+                        name="airline-username"
+                /><br />
+                <label for="airline-password">Password</label>
+                <input id="airline-password" type="text" /><br />
+                <button class="button" type="submit">Login</button>
+            </form>
+        </div>
     </div>
 </div>
 </body>
