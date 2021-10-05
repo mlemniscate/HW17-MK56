@@ -7,7 +7,7 @@ public class HibernateUtil {
     private static final EntityManagerFactory mainEntityManagerFactory;
 
     static {
-        mainEntityManagerFactory = Persistence.createEntityManagerFactory("MK56HW16");
+        mainEntityManagerFactory = Persistence.createEntityManagerFactory("MK56HW17");
     }
 
     public static EntityManagerFactory getMainEntityManagerFactory() {
