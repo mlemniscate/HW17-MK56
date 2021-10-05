@@ -14,8 +14,18 @@
     <servlet-class>ir.maktab.servlets.UserPage</servlet-class>
   </servlet>
   
+  <servlet>
+    <servlet-name>AirlinePage</servlet-name>
+    <servlet-class>ir.maktab.servlets.AirlinePage</servlet-class>
+  </servlet>
+  
   <servlet-mapping>
     <servlet-name>UserPage</servlet-name>
     <url-pattern>/user</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>AirlinePage</servlet-name>
+    <url-pattern>/airline</url-pattern>
   </servlet-mapping>
 </web-app>

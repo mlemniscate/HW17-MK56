@@ -12,7 +12,7 @@
     <div class="container">
         <div class="login">
             <p>User Login</p>
-            <form method="GET" action="/MK56HW17_war/user">
+            <form method="POST" action="/MK56HW17_war/user">
                 <label for="user-username">Username</label>
                 <input id="user-username" type="text" name="user-username" /><br />
                 <label for="user-password">Password</label>
@@ -22,7 +22,7 @@
         </div>
         <div class="login">
             <p>Airline Login</p>
-            <form method="GET" action="/MK56HW17_war/airline">
+            <form method="POST" action="/MK56HW17_war/airline">
                 <label for="airline-username">Username</label>
                 <input
                         id="airline-username"

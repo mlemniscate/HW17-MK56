@@ -1,12 +1,13 @@
 package ir.maktab.service.impl;
 
+import ir.maktab.base.service.impl.BaseEntityServiceImpl;
 import ir.maktab.domain.Airline;
 import ir.maktab.repository.AirlineRepository;
 import ir.maktab.service.AirlineService;
 
 import java.util.Objects;
 
-public class AirlineServiceImpl extends BaseUserServiceImpl implements AirlineService {
+public class AirlineServiceImpl extends BaseEntityServiceImpl<Airline, Long, AirlineRepository> implements AirlineService {
 
     public AirlineServiceImpl(AirlineRepository repository) {
         super(repository);
@@ -15,7 +16,7 @@ public class AirlineServiceImpl extends BaseUserServiceImpl implements AirlineSe
 
     @Override
     public Airline login(String username, String password) throws Exception {
-        Airline airline = (Airline) repository.findByUsername(username);
+        Airline airline = repository.findByUsername(username);
         if(Objects.isNull(airline))
             throw new NullPointerException("\n----------------------------------" +
                     "\nYour username is wrong!\n" +
