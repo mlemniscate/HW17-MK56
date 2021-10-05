@@ -26,9 +26,10 @@ public class User extends BaseUser {
     private Account account;
 
     @Builder(builderMethodName = "userBuilder")
-    public User(String username, String password, String email, String mobilePhoneNumber, Integer balance) {
+    public User(String username, String password, String email, String mobilePhoneNumber, Integer balance, Account account) {
         super(username, password, balance);
         this.email = email;
         this.mobilePhoneNumber = mobilePhoneNumber;
+        this.account = account;
     }
 }

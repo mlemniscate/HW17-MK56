@@ -1,9 +1,8 @@
 package ir.maktab.service;
 
-import ir.maktab.base.service.BaseEntityService;
 import ir.maktab.domain.Airline;
 
-public interface AirlineService extends BaseEntityService<Airline, Long> {
+public interface AirlineService extends BaseUserService {
 
     Airline login(String username, String password) throws Exception;
 

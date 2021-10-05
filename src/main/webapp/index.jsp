@@ -9,6 +9,7 @@
 </head>
 <body>
 <div class="container">
+    <div class="big-image"></div>
     <div class="login">
         <p>User Login</p>
         <form method="post" action="/MK56HW17_war/user">
