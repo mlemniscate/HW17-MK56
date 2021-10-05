@@ -5,6 +5,10 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
   
+  <listener>
+    <listener-class>ir.maktab.MainListener</listener-class>
+  </listener>
+  
   <servlet>
     <servlet-name>UserPage</servlet-name>
     <servlet-class>ir.maktab.servlets.UserPage</servlet-class>
