@@ -14,14 +14,14 @@ import java.io.PrintWriter;
 public class AirlinePage extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String username = request.getParameter("user-username");
-        String password = request.getParameter("user-password");
+        String username = request.getParameter("airline-username");
+        String password = request.getParameter("airline-password");
         HttpSession session = request.getSession(true);
 
         PrintWriter out = response.getWriter();
         try {
             Airline airline = ApplicationContext.getAirlineService().login(username, password);
-            session.setAttribute("user", airline);
+            session.setAttribute("airline", airline);
             out.println(airline);
         } catch (Exception e) {
             out.println(e.getMessage());
