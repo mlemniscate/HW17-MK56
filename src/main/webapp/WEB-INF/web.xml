@@ -16,7 +16,12 @@
   
   <servlet>
     <servlet-name>AirlinePage</servlet-name>
-    <servlet-class>ir.maktab.servlets.AirlinePage</servlet-class>
+    <servlet-class>ir.maktab.servlets.airline.AirlinePage</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>AirlineAddFlight</servlet-name>
+    <servlet-class>ir.maktab.servlets.airline.AirlineAddFlight</servlet-class>
   </servlet>
   
   <servlet-mapping>
@@ -27,5 +32,10 @@
   <servlet-mapping>
     <servlet-name>AirlinePage</servlet-name>
     <url-pattern>/airline</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>AirlineAddFlight</servlet-name>
+    <url-pattern>/airline/add-flight</url-pattern>
   </servlet-mapping>
 </web-app>
